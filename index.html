@@ -1,0 +1,35 @@
+<html>
+	<head
+	<title>Train Control</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/legotrain.css">
+	</head>
+	<body>
+		<div id="div_train_channel">
+			<label for="channel">Tågkanal: </label>
+			<input type="text" id="channel" name="channel" list="channel_list" value="2B" /> 
+			<datalist id="channel_list"> 
+				<option value="2B"> 
+				<option value="1R">
+				<option value="1B">
+			</datalist> 			
+		</div>
+		<br>
+		<div id="div_speed">
+			<label for="speed">Hastighet: </label>
+			<input type="range" id="speed" min="-7" max="7" value="0" />
+		</div>
+		<br>
+		<div id="div_switch">
+			<label for="switch">Växel: </label>
+			<fieldset>
+				<input type="radio" name="switch" value="left" />Vänster<br />
+				<input type="radio" name="switch" value="right" />Höger<br />
+			</fieldset>
+		</div>
+		<br>
+		<div id="div_emergency_stop">
+			<button type="button">STOPP!</button>	
+		</div>
+	</body>
+</html>
